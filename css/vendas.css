@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+strong {
+  font-size: 16px;
+}
+input {
+  width: 60px;
+  margin-right: 10px;
+}
+button {
+  padding: 5px;
+  margin-top: 5px;
+}
+hr {
+  margin: 10px 0;
+}

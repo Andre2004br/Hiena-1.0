@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f4f6f9;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 12px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .sidebar nav a:hover {
+    background-color: #145aa8;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+  }
+  
+  .user-info {
+    font-weight: bold;
+    background-color: #d9edf7;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  
+  .dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    width: 240px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0d3b66;
+  }
+  
+  .card p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+

@@ -1,0 +1,107 @@
+/backend
+├── models/
+│   └── Usuario.js
+├── routes/
+│   └── auth.js
+├── controllers/
+│   └── authController.js
+├── middleware/
+│   └── authMiddleware.js
+├── config/
+│   └── db.js
+├── server.js
+
+
+//
+
+
+/backend
+├── models/Venda.js 🆕
+├── controllers/vendaController.js 🆕
+├── routes/venda.js 🆕
+
+/frontend
+├── vendas.html 🆕
+├── js/vendas.js 🆕
+├── css/vendas.css 🆕
+
+
+//
+
+
+/frontend
+├── importar-nfe.html 🆕
+├── js/importar-nfe.js 🆕
+
+/backend
+├── routes/nfe.js 🆕
+├── controllers/nfeController.js 🆕
+
+
+///
+
+
+/frontend
+├── relatorios.html 🆕
+├── js/relatorios.js 🆕
+
+/backend
+├── routes/relatorio.js 🆕
+├── controllers/relatorioController.js 🆕
+
+
+//
+
+
+/frontend
+├── dashboard.html 🆕
+├── js/dashboard.js 🆕
+
+/backend
+├── routes/dashboard.js 🆕
+├── controllers/dashboardController.js 🆕
+
+
+//
+
+
+/frontend
+├── fornecedores.html 🆕
+├── js/fornecedores.js 🆕
+
+/backend
+├── models/Fornecedor.js 🆕
+├── controllers/fornecedorController.js 🆕
+├── routes/fornecedor.js 🆕
+
+
+//
+
+/backend
+├── models/Empresa.js ✅
+├── models/Usuario.js ✅
+├── controllers/authController.js ✅
+├── routes/auth.js ✅
+├── middleware/authMiddleware.js ✅
+
+/frontend
+├── login.html ✅
+├── js/login.js ✅
+
+
+//
+
+/backend
+├── models/Produto.js ✅
+├── controllers/alertaController.js ✅
+├── jobs/alertaJob.js ✅
+├── routes/alertas.js ✅
+
+/frontend
+├── dashboard.html ✅
+├── js/alertas.js ✅
+
+
+//
+
+

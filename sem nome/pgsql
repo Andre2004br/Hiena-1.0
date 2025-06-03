@@ -1,0 +1,13 @@
+Hiena-1.0/
+├── backend/
+│   ├── server.js
+│   ├── controllers/
+│   │   └── produtosController.js (vamos criar agora)
+│   ├── models/
+│   │   └── produtosModel.js (vamos criar agora)
+│   └── database.sqlite (será criado automaticamente)
+├── public/
+│   ├── produtos.html (vamos criar agora)
+│   ├── style.css
+│   └── js/
+│       └── produtos.js (vamos criar agora)

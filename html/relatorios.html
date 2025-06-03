@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatórios | Hiena 1.0</title>
+</head>
+<body>
+  <h1>Relatórios</h1>
+
+  <select id="tipoRelatorio">
+    <option value="diario">Diário</option>
+    <option value="mensal">Mensal</option>
+    <option value="produto">Por Produto</option>
+  </select>
+
+  <input type="date" id="dataRelatorio">
+  <input type="text" id="produtoNome" placeholder="Nome do Produto (se for por produto)">
+  <button onclick="gerarRelatorio()">Gerar Relatório</button>
+
+  <div id="relatorioResultado"></div>
+
+  <script src="js/relatorios.js"></script>
+</body>
+</html>
