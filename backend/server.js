@@ -6,6 +6,7 @@ const xml2js = require('xml2js');
 const fs = require('fs');
 const { Op } = require('sequelize');
 const moment = require('moment');
+const sqlite3 = require('sqlite3').verbose();
 
 // Models e Controllers
 const sequelize = require('./config/db');
@@ -26,7 +27,6 @@ const authRoutes = require('./routes/auth');
 const vendasRoutes = require('./routes/vendasRoutes');
 const relatoriosRoutes = require('./routes/relatoriosRoutes');
 
-// Inicialização do app
 const app = express();
 const upload = multer({ dest: 'uploads/' });
 const port = 3000;
@@ -48,7 +48,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/venda', vendasRoutes);
 app.use('/api/relatorio', relatoriosRoutes);
 
-// Rotas de produtos (exemplo)
+// Rotas de produtos
 app.get('/api/produtos', produtosController.listar);
 app.post('/api/produtos', produtosController.inserir);
 
@@ -149,7 +149,6 @@ app.post('/api/venda', async (req, res) => {
 });
 
 // Banco de dados SQLite para empresas (login)
-const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./backend/database.sqlite');
 
 db.run(`CREATE TABLE IF NOT EXISTS empresas (
