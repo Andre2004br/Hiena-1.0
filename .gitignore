@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# VSCode
+.vscode/
+
+# Uploads e arquivos temporários
+uploads/
+*.tmp
+
+# Banco de dados local
+backend/database.sqlite
+
+# Logs
+logs/
+*.log
+
+# Build
+dist/
+build/
+out/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

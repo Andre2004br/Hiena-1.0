@@ -7,6 +7,7 @@ const fs = require('fs');
 const { Op } = require('sequelize');
 const moment = require('moment');
 const sqlite3 = require('sqlite3').verbose();
+const path = require('path');
 
 // Models e Controllers
 const sequelize = require('./config/db');
@@ -35,6 +36,14 @@ const port = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
+
+// Middleware para servir arquivos estáticos da pasta "public"
+app.use(express.static(path.join(__dirname, '../public')));
+
+// Rota para servir o index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../Index.html'));
+});
 
 // Rotas principais
 app.use('/api/alertas', alertaRoutes);
